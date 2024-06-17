@@ -1,0 +1,17 @@
+.container {
+  perspective: 300%;
+}
+
+@keyframes rotate-cube {
+  from {
+    transform: rotateX(-15deg) rotateY(20deg);
+  }
+  to {
+    transform: rotateX(-375deg) rotateY(380deg);
+  }
+}
+
+.cube {
+  animation: rotate-cube 5000ms linear infinite forwards;
+  transform-style: preserve-3d;
+}
